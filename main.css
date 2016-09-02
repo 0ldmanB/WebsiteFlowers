@@ -5,7 +5,7 @@
 	margin-left: 0px;
 	opacity: 0.6;
 	width: 100%;
-	z-index: 2;
+	z-index:-100;
 	
 
 }
@@ -17,22 +17,36 @@
 	overflow: hidden;
 	border-bottom-style: solid;
 	border-bottom-color: #003345;
+	z-index: -50;
 	
+}
+
+#titleContainer{
+	position:fixed;
+	top:0;
+	right:0;
+	margin: 20px 20px 0px 0px;
+	z-index: 2
 }
 
 #titleText{
 	font-family: 'Bree Serif';
 	font-size: 600%;
-	position: fixed;
-	margin-top: 30px;
-	margin-right: 10px;
-
-	top: 0;
-	right:0;
-	padding: 10px;
 	color: black;
-	z-index: 1;
+	z-index: 4;
 
+}
+
+#titleBG{
+	background-color: white;
+	z-index: 3
+	height: 50px;
+	width:100%;
+	position: relative;
+	top:2;
+	
+	
+	
 }
 
 
@@ -56,6 +70,7 @@
 	position: relative;
 	margin: -10px 20px 10px 20px;
 	padding: 0px;
+	z-index: 0;
 	
 	text-align: justify;
 	
